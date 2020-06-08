@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: banner 15s infinite linear;
+}
+
+header img:nth-last-of-type(2) {
+    animation-delay: 5s;
+}
+
+header img:nth-last-of-type(3) {
+    animation-delay: 10s;
+}
+
+@keyframes banner {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1
+    }
+
+    33.33% {
+        opacity: 1
+    }
+
+    38.33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.slogan {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.slogan h1 {
+    margin-bottom: 0.25em;
+    text-shadow: 3px 3px black;
+}
+
+.slogan h1 span {
+    padding: 0.2em;
+    color: #b30000;
+}
+
+.text h2 {
+    position: absolute;
+    font-size: 2.5vw;
+    animation: txt 15s linear infinite both;
+    opacity: 0;
+    color: #b30000;
+
+}
+
+h2:nth-of-type(1) {
+    top: 70%;
+    left: 20%;
+}
+
+h2:nth-of-type(2) {
+    top: 70%;
+    left: 20%;
+    color: white;
+    animation-delay: 5s;
+}
+
+h2:nth-of-type(3) {
+    top: 70%;
+    left: 20%;
+    animation-delay: 10s;
+}
+
+@keyframes txt {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    23.33% {
+        opacity: 1;
+    }
+
+    28.33% {
+        opacity: 0;
+    }
+
+    33.33% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
+.burger {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    font-size: 3vw;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+}
+
+.burger i.off {
+    display: none;
+}
+
+i.fa-angle-up {
+    color: white;
+}
+
+nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    opacity: 0.8;
+    transition: .2s;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li a {
+    padding: 0.1em;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+}
+
+nav.off {
+    top: -10vh;
+}
+.cadre{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 150vh;
+}
+.cadre h1 {
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #b30000;
+}
+.project{
+    display: flex;
+    margin: .5em;
+    color: white;
+    height: 50%;
+}
+.web{
+    width: 50%;
+}
+
+.web>img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    width: 50%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-family: 'Teko', sans-serif;
+    font-weight: normal;
+}
+
+.description h2 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: #b30000;
+
+}
+
+.description p {
+    font-size: 1vw;
+    text-align: justify;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+
+.gallery h1 {
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #b30000;
+}
+
+.gallery .photos {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photos>div {
+    flex-basis: 23%;
+}
+
+.photos div img {
+    width: 100%;
+}
+
+.schedule h1 {
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #b30000;
+}
+
+.flexschedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.info {
+    height: 70%;
+    font-size: 1vw;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+
+.info button {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #b30000;
+    border: 4px solid white;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.info.blur {
+    filter: blur(2px);
+}
+
+
+.modal-wrap {
+    display: none;
+}
+
+.modal-wrap.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal-wrap.active .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+    border: 4px solid black;
+}
+.modal>img{
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-family: arial;
+    font-size: 30px;
+    color: #b30000;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.modal-wrap2 {
+    display: none;
+}
+
+.modal-wrap2.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-wrap2.active .modal2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+    border: 6px solid black;
+}
+.modal2>img{
+    height: 100%;
+    width: 100%;
+}
+
+.hide2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-family: arial;
+    font-size: 30px;
+    color: #b30000;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.modal-wrap3 {
+    display: none;
+}
+
+.modal-wrap3.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-wrap3.active .modal3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+    border: 6px solid black;
+}
+.modal3>img{
+    height: 100%;
+    width: 100%;
+}
+
+.hide3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-family: arial;
+    font-size: 30px;
+    color: #b30000;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+footer h1 {
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #b30000;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 20vh;
+    background-color: black;
+    color: white;
+}
+
+.social {
+    height: 70%;
+    font-size: 1.5vw;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+
+}
+
+.social span {
+    margin-left: 5px;
+}
+
+.social a {
+    font-size: 1.5vw;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+.social a:hover {
+    color: #b30000;
+
+}
+
+/* respons */
+@media(orientation:portrait){
+   .burger{
+       font-size: 8vw;
+    }
+    nav {
+    height: 50vh;
+    }
+    nav ul {
+    flex-direction: column;
+    }
+    
+    nav ul li a {
+        font-size: 3vw;
+    }
+    
+    nav.off {
+        top: -50vh;
+    }
+    .slogan {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);   
+    }
+    .cadre{
+        height: 150vh;
+    }
+    .cadre h1 {
+        font-size: 5vw;
+    }
+    .project{
+        flex-direction: column;
+        height: 50%;
+    }
+    .web{
+        width: 100%;
+    }   
+    .description {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .description h2 {
+        font-size: 5.5vw;   
+    }
+    
+    .description p {
+        font-size: 2.5vw;
+    }
+    .gallery{
+        height: 80vh;
+    }
+    .gallery h1 {
+        font-size: 5vw;
+    }
+    .schedule h1 {
+        font-size: 5vw;
+    }
+    
+    .flexschedule {
+        flex-direction: column;
+    }
+    
+    .info {
+        height: 70%;
+        font-size: 3vw;
+    }
+    .modal-wrap.active .modal {
+        width: 90%;
+        height: 50%;
+
+    }
+    .modal-wrap2.active .modal2 {
+        width: 90%;
+        height: 50%;
+
+    }
+    .modal-wrap3.active .modal3 {
+        width: 90%;
+        height: 50%;
+
+    }
+    footer h1 {
+        font-size: 5vw;
+    }
+    .social {
+        font-size: 3vw; 
+    }
+    
+    .social a {
+        font-size: 3vw;
+    
+    }       
+}
+@media(max-width:240px){
+    .cadre{
+        height: 220vh;
+    }
+
+}
+@media(width:768px){
+    .cadre{
+        height: 200vh;
+    }
+
+}
+@media(width:1024px){
+    .cadre{
+        height: 200vh;
+    }
+
+}
