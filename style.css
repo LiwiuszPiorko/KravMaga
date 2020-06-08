@@ -328,7 +328,7 @@ nav.off {
     height: 40%;
     border: 4px solid black;
 }
-.modal>img{
+.modal-wrap .modal>img{
     width: 100%;
     height: 100%;
 }
