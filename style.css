@@ -275,7 +275,7 @@ nav.off {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: black;
     color: white;
 }
@@ -285,6 +285,19 @@ nav.off {
     font-size: 1vw;
     font-family: 'Teko', sans-serif;
     text-align: center;
+    border: 6px solid #b30000;
+    padding: .3em;
+}
+.flexschedule .info>h1{
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b30000;
+    background-color: black;
+}
+.info>p{
+    color: #b30000;
 }
 footer h1 {
     font-size: 2vw;
